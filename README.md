@@ -2,7 +2,7 @@
 
 ## Description
 
-A fun way to quiz yourself and keep your memory fresh! 
+A fun way to quiz yourself and keep your memory fresh! This application's purpose is simple but can end up having endless amounts of questions, making it extremely replayable and even competitive! Checkout further development for whats to be added to this app in the future!
 ## User Story
 
 ```
