@@ -6,29 +6,12 @@ const answerButtonsElement = document.getElementById('answer-buttons')
 
 let shuffledQuestions, currentQuestionIndex
 
-const startingSeconds = 20;
-let time = startingSeconds * 60;
-  const timerEl = document.getElementById('timer');
-
-setInterval(updateTimer, 1000);
-
-function updateTimer() {
-  const seconds = Math.floor(time % 60);
-
-  timerEl.innerHTML = `${seconds}`;
-  time--;
-}
-function setAlert() {
-  alert("Times Up!");
-}
-
 startButton.addEventListener('click', startGame)
-startButton.addEventListener('click', time)
+startButton.addEventListener('click', updateTimer)
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
   setNextQuestion()
 })
-
 
 function startGame() {
   startButton.classList.add('hide')
@@ -37,7 +20,6 @@ function startGame() {
   questionContainerElement.classList.remove('hide')
   setNextQuestion()
 }
-
 
 function setNextQuestion() {
   resetState()
@@ -93,6 +75,25 @@ function setStatusClass(element, correct) {
 function clearStatusClass(element) {
   element.classList.remove('correct')
   element.classList.remove('wrong')
+}
+
+const startingSeconds = 20;
+let time = startingSeconds * 10;
+  const timerEl = document.getElementById('timer');
+
+setInterval(updateTimer, 1000);
+
+function updateTimer() {
+  const seconds = Math.floor(time % 20);
+
+  if (time <0){
+    function sendAlert() {
+      alert("Times Up!");
+    }
+  }
+
+  timerEl.innerHTML = `${seconds}`;
+  time--;
 }
 
 const questions = [
