@@ -30,4 +30,24 @@ THEN the screen turns red
 * There will be a scored board input at the end so that the user can record their score and store the information for later reference.
 * A scoreboard button will bring up all past scores and initials of those who registered the information.
 * More questions can be added to prolong the game.
+* The overall design will be cleaned up and the elements will be more bold.
+
+## Usage
+
+You are greeted with a start button on launch.
+
+![quizss](https://user-images.githubusercontent.com/112601209/224025656-111ee564-bc79-4bc8-8d7d-f1ce0121e0b2.jpg)
+
+After clicking start your first question shows up.
+
+![quizssquestion](https://user-images.githubusercontent.com/112601209/224025836-965e7f77-170c-4ab5-bea5-67f0a226a83b.jpg)
+
+If you answer correctly the browser window turns green!
+
+![quizright](https://user-images.githubusercontent.com/112601209/224025964-88b2a51a-8328-412f-b698-07d001b5c148.jpg)
+
+If you answer incorrectly the browser window turns red!
+
+![quizsswrong](https://user-images.githubusercontent.com/112601209/224026105-88fe3872-ab68-4b47-9de2-975b2fbf304d.jpg)
+
 
