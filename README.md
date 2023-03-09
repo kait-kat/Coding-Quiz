@@ -32,6 +32,10 @@ THEN the screen turns red
 * More questions can be added to prolong the game.
 * The overall design will be cleaned up and the elements will be more bold.
 
+## Installation
+
+No additional installation needed!
+
 ## Usage
 
 You are greeted with a start button on launch.
