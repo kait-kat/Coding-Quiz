@@ -6,11 +6,29 @@ const answerButtonsElement = document.getElementById('answer-buttons')
 
 let shuffledQuestions, currentQuestionIndex
 
+const startingSeconds = 20;
+let time = startingSeconds * 60;
+  const timerEl = document.getElementById('timer');
+
+setInterval(updateTimer, 1000);
+
+function updateTimer() {
+  const seconds = Math.floor(time % 60);
+
+  timerEl.innerHTML = `${seconds}`;
+  time--;
+}
+function setAlert() {
+  alert("Times Up!");
+}
+
 startButton.addEventListener('click', startGame)
+startButton.addEventListener('click', time)
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
   setNextQuestion()
 })
+
 
 function startGame() {
   startButton.classList.add('hide')
@@ -19,6 +37,7 @@ function startGame() {
   questionContainerElement.classList.remove('hide')
   setNextQuestion()
 }
+
 
 function setNextQuestion() {
   resetState()
@@ -78,35 +97,39 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: '?',
+    question: 'What is a Data Structure?',
     answers: [
-      { text: '', correct: true },
-      { text: '', correct: false }
+      { text: 'Arrays', correct: true },
+      { text: 'Empire State Building', correct: false },
+      { text: 'Pentagon', correct: false },
+      { text: 'My Nokia', correct: false }
     ]
   },
   {
-    question: '',
+    question: 'What is a queue?',
     answers: [
-      { text: '', correct: true },
-      { text: '', correct: true },
-      { text: '', correct: true },
-      { text: '', correct: true }
+      { text: 'a linear data structure', correct: true },
+      { text: 'a letter', correct: false },
+      { text: 'a wait time in World of Warcraft', correct: false },
+      { text: 'an O with a line', correct: false }
     ]
   },
   {
-    question: '',
+    question: 'Lorem ipsum',
     answers: [
-      { text: '', correct: false },
-      { text: '', correct: true },
-      { text: '', correct: false },
-      { text: '', correct: false }
+      { text: 'fixum mixum', correct: false },
+      { text: 'dolor sit amet', correct: true },
+      { text: 'idk', correct: false },
+      { text: 'abra cadabra', correct: false }
     ]
   },
   {
-    question: '',
+    question: 'What does HTML stand for?',
     answers: [
-      { text: '', correct: false },
-      { text: '', correct: true }
+      { text: 'HamTomatoMayoLettuce', correct: false },
+      { text: 'HyperText Markup Language', correct: false },
+      { text: 'Hand The Mice Logs', correct: false },
+      { text: 'HandyTandyMandyLandy', correct: true }
     ]
   }
 ]
