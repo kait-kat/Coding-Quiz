@@ -128,9 +128,9 @@ const questions = [
     question: 'What does HTML stand for?',
     answers: [
       { text: 'HamTomatoMayoLettuce', correct: false },
-      { text: 'HyperText Markup Language', correct: false },
+      { text: 'HyperText Markup Language', correct: true },
       { text: 'Hand The Mice Logs', correct: false },
-      { text: 'HandyTandyMandyLandy', correct: true }
+      { text: 'HandyTandyMandyLandy', correct: false }
     ]
   }
 ]
