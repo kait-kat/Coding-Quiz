@@ -38,6 +38,8 @@ No additional installation needed!
 
 ## Usage
 
+[(https://kait-kat.github.io/Quiz-Me/root/index.html)]
+
 You are greeted with a start button on launch.
 
 ![quizss](https://user-images.githubusercontent.com/112601209/224025656-111ee564-bc79-4bc8-8d7d-f1ce0121e0b2.jpg)
