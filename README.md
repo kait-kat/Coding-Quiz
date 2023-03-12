@@ -2,7 +2,7 @@
 
 ## Description
 
-A fun way to quiz yourself and keep your memory fresh! 
+A fun way to quiz yourself and keep your memory fresh! This application's purpose is simple but can end up having endless amounts of questions, making it extremely replayable and even competitive! Checkout further development for whats to be added to this app in the future!
 ## User Story
 
 ```
@@ -32,7 +32,13 @@ THEN the screen turns red
 * More questions can be added to prolong the game.
 * The overall design will be cleaned up and the elements will be more bold.
 
+## Installation
+
+No additional installation needed!
+
 ## Usage
+
+[(https://kait-kat.github.io/Quiz-Me/root/index.html)]
 
 You are greeted with a start button on launch.
 
